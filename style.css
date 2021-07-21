@@ -36,6 +36,7 @@ main {
   display: flex;
   width: 675px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 #family-div {
@@ -64,4 +65,9 @@ main {
   display: flex;
   flex-direction: row;
   width: 500px;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
 }

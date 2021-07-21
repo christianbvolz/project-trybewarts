@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const btnLogin = document.getElementById('login');
 
 btnLogin.addEventListener('click', (event) => {
@@ -12,6 +11,5 @@ let senha = document.querySelectorAll('.trybewarts-login input')[1].value
     alert('Login ou senha inválidos.');
   }
 })
-=======
+
 const checkBox = document.getElementById('agreement');
->>>>>>> 82b1873e2dd967628e0bc46cf7fea1ea046e35a0
