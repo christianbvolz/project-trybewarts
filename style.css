@@ -24,6 +24,22 @@ main {
 }
 
 #family-div {
+  width: 200px;
+}
+
+#family-div , #content-div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+#content-div div {
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+}
+
+#content-div div * {
+  margin: 5px;
 }
