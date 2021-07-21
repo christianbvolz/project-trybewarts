@@ -22,3 +22,8 @@ main {
   display: flex;
   width: 675px;
 }
+
+#family-div {
+  display: flex;
+  flex-direction: column;
+}
