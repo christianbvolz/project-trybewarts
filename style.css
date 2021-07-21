@@ -39,6 +39,22 @@ main {
   flex-direction: column;
 }
 
+#evaluation-form #forms{
+  display: flex;
+  align-self: center;
+}
+
+#personal-data-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#personal-data-div input, #personal-data-div select{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
 #family-div {
   width: 200px;
 }
