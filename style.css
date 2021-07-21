@@ -35,11 +35,10 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 
-#evaluation-form #forms{
+#evaluation-form #forms {
   display: flex;
   align-self: center;
 }
@@ -49,7 +48,7 @@ main {
   flex-wrap: wrap;
 }
 
-#personal-data-div input, #personal-data-div select{
+#personal-data-div input , #personal-data-div select {
   display: flex;
   flex-wrap: wrap;
   width: 300px;
@@ -82,11 +81,8 @@ main {
   flex-direction: row;
   width: 500px;
 }
-<<<<<<< HEAD
-=======
 
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
 }
->>>>>>> 024d9056596e9616a5daca7826a7ba33ec29ce10
