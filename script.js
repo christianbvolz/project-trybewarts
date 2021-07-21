@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+const checkBox = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
+
+checkBox.addEventListener('click', (element) => {
+  if (element.target.checked === true) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+});
+=======
 const btnLogin = document.getElementById('login');
 
 btnLogin.addEventListener('click', (event) => {
@@ -13,3 +25,4 @@ let senha = document.querySelectorAll('.trybewarts-login input')[1].value
 })
 
 const checkBox = document.getElementById('agreement');
+>>>>>>> 024d9056596e9616a5daca7826a7ba33ec29ce10

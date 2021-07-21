@@ -82,8 +82,11 @@ main {
   flex-direction: row;
   width: 500px;
 }
+<<<<<<< HEAD
+=======
 
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
 }
+>>>>>>> 024d9056596e9616a5daca7826a7ba33ec29ce10
