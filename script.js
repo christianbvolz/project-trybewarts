@@ -22,3 +22,13 @@ btnLogin.addEventListener('click', (event) => {
     alert('Login ou senha inválidos.');
   }
 });
+
+const textArea = document.getElementById('textarea');
+
+textArea.addEventListener('keyup', () => {
+  const countCharacter = textArea.value.length;
+  const counter = document.getElementById('counter');
+  const maxLength = textArea.getAttribute('maxlength');
+  const currentLength = maxLength - countCharacter;
+  counter.innerHTML = `${currentLength}`;
+});
