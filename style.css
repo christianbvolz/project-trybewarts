@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+}
+
+header img {
+  display: flex;
+  justify-content: flex-start;
+  width: 50px;
+}
+
 main {
   display: flex;
 }
