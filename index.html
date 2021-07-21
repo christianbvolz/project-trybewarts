@@ -10,10 +10,23 @@
 <body>
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="Trybewarts-header-logo" class="trybewarts-header-logo">
+
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+    <form action="" class="trybewarts-login">
+      <input type="text" placeholder='Login' value="">
+      <input type="password" placeholder='Senha' value="">
+      <button id="login">Logar</button>
+    </form>
   </header>
   
   <main>
     <form action="" id="evaluation-form">
+      <div id="personal-data-div">
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
+        <input type="text" id="input-email" placeholder="Email">
+      </div>
       <div id="family-div">
         <label for="family" id="label-family">Qual sua família?</label>
         <span><input type="radio" name="family" id="family" value="Frontend">Frontend</span>
@@ -50,6 +63,8 @@
       <input type="checkbox" name="agreement" id="agreement">
       <button type="submit" disabled id="submit-btn">Enviar</button>
     </form>
+
+    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
   </main>
   <footer>
     <p>Direitos reservados à Trybewarts©</p>
