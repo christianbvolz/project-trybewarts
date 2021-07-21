@@ -6,12 +6,26 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 header img {
   display: flex;
-  justify-content: flex-start;
   width: 50px;
+}
+
+#trybewarts-header-title {
+  color: white;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.trybewarts-login input {
+  display: flex;
 }
 
 main {
