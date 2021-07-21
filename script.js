@@ -1,0 +1,1 @@
+const checkBox = document.getElementById('agreement');

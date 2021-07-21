@@ -21,6 +21,7 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
+  flex-wrap: wrap;
 }
 
 #family-div {
@@ -32,6 +33,7 @@ main {
   flex-direction: column;
   justify-content: center;
   margin: 0 10px;
+  flex-grow: 1;
 }
 
 #content-div div {
@@ -42,4 +44,10 @@ main {
 
 #content-div div * {
   margin: 5px;
+}
+
+#rate-div {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
 }

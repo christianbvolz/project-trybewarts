@@ -31,17 +31,24 @@
           <input type="checkbox" name="" id="" class="subject" value="Python">Python
         </div>
       </div>
-      <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-      <input type="radio" name="rate" id="" value="1">1
-      <input type="radio" name="rate" id="" value="2">2
-      <input type="radio" name="rate" id="" value="3">3
-      <input type="radio" name="rate" id="" value="4">4
-      <input type="radio" name="rate" id="" value="5">5
-      <input type="radio" name="rate" id="" value="6">6
-      <input type="radio" name="rate" id="" value="7">7
-      <input type="radio" name="rate" id="" value="8">8
-      <input type="radio" name="rate" id="" value="9">9
-      <input type="radio" name="rate" id="" value="10">10
+      <div id="rate-div">
+        <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
+        <input type="radio" name="rate" id="" value="1">1
+        <input type="radio" name="rate" id="" value="2">2
+        <input type="radio" name="rate" id="" value="3">3
+        <input type="radio" name="rate" id="" value="4">4
+        <input type="radio" name="rate" id="" value="5">5
+        <input type="radio" name="rate" id="" value="6">6
+        <input type="radio" name="rate" id="" value="7">7
+        <input type="radio" name="rate" id="" value="8">8
+        <input type="radio" name="rate" id="" value="9">9
+        <input type="radio" name="rate" id="" value="10">10
+      </div>
+      <label for="" class="textarea">Deixe seu comentário:</label>
+      <textarea name="" id="" cols="30" rows="5" maxlength="500"></textarea>
+      <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+      <input type="checkbox" name="agreement" id="agreement">
+      <button type="submit" disabled id="submit-btn">Enviar</button>
     </form>
   </main>
   <script src="script.js"></script>
