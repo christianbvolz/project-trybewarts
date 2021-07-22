@@ -22,3 +22,66 @@ btnLogin.addEventListener('click', (event) => {
     alert('Login ou senha inválidos.');
   }
 });
+
+function newForm() {
+  const main = document.getElementsByTagName('main')[0];
+  main.removeChild(document.getElementById('evaluation-form'));
+  const form = document.createElement('form');
+  form.id = 'evaluation-form';
+  form.style.order = -1;
+  main.appendChild(form);
+  return form;
+}
+
+function selectedFamily(family) {
+  for (let index = 0; index < family.length; index += 1) {
+    if (family[index].checked === true) {
+      return family[index].value;
+    }
+  }
+}
+
+function selectedContent(contents) {
+  const content = [];
+  for (let index = 0; index < contents.length; index += 1) {
+    if (contents[index].checked === true) {
+      content.push(contents[index].value);
+    }
+  }
+  return content;
+}
+
+function selectedRate(rates) {
+  for (let index = 0; index < rates.length; index += 1) {
+    if (rates[index].checked === true) {
+      return rates[index].value;
+    }
+  }
+}
+
+function completedForm(allInputs, form) {
+  for (let index = 0; index < allInputs.length; index += 1) {
+    const paragraph = document.createElement('p');
+    paragraph.innerHTML = allInputs[index];
+    form.appendChild(paragraph);
+  }
+}
+
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  const firstName = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const fullName = `Nome: ${firstName} ${lastName}`;
+  const email = `Email: ${document.getElementById('input-email').value}`;
+  const house = `Casa: ${document.getElementById('house').value}`;
+  const families = document.getElementsByName('family');
+  const family = `Família: ${selectedFamily(families)}`;
+  const contents = document.getElementsByClassName('subject');
+  const content = `Matérias: ${selectedContent(contents).join(', ')}`;
+  const rates = document.getElementsByName('rate');
+  const rate = `Avaliação: ${selectedRate(rates)}`;
+  const comment = `Observações: ${document.getElementById('textarea').value}`;
+  const allInputs = [fullName, email, house, family, content, rate, comment];
+  const form = newForm();
+  completedForm(allInputs, form);
+});
