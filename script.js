@@ -23,6 +23,16 @@ btnLogin.addEventListener('click', (event) => {
   }
 });
 
+const textArea = document.getElementById('textarea');
+
+textArea.addEventListener('keyup', () => {
+  const countCharacter = textArea.value.length;
+  const counter = document.getElementById('counter');
+  const maxLength = textArea.getAttribute('maxlength');
+  const currentLength = maxLength - countCharacter;
+  counter.innerHTML = `${currentLength}`;
+});
+
 function newForm() {
   const main = document.getElementsByTagName('main')[0];
   main.removeChild(document.getElementById('evaluation-form'));
