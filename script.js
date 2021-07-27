@@ -72,6 +72,7 @@ function selectedRate(rates) {
 function completedForm(allInputs, form) {
   for (let index = 0; index < allInputs.length; index += 1) {
     const paragraph = document.createElement('p');
+    paragraph.className = 'completed-form';
     paragraph.innerHTML = allInputs[index];
     form.appendChild(paragraph);
   }
